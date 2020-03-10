@@ -11,16 +11,6 @@ struct bb_score
 	vector<float> res_score;
 };
 
-vector<vector<float>> copyList(vector<vector<float>>& in_list) {
-	vector<vector<float>> res_vec;
-	for (size_t i = 0; i < in_list.size(); i++) {
-		vector<float> sub_vec;
-		sub_vec = in_list[i];
-		res_vec.push_back(sub_vec);
-	}
-	return res_vec;
-}
-
 vector<int> argsort(const vector<float>& a) {
 	int Len = a.size();
 	vector<int> idx(Len, 0);
@@ -140,7 +130,7 @@ bb_score nms_3d(vector<vector<float>>& boxes, vector<float>& scores, float iou_t
 }
 
 PYBIND11_MODULE(nms_cpp, m) {
-	m.doc() = "pass and return a list";
+	m.doc() = "implementation of NMS algorithm in 3D application";
 	py::class_<bb_score>(m, "bb_score")
 		.def_readwrite("res_boxes", &bb_score::res_box)
 		.def_readwrite("res_scores", &bb_score::res_score);

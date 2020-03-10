@@ -1,2 +1,9 @@
-﻿    正在创建库 E:\work\3D_NMS\nms_cpp\x64\Debug\nms_cpp.lib 和对象 E:\work\3D_NMS\nms_cpp\x64\Debug\nms_cpp.exp
+﻿  nms_3d_cpp.cpp
+E:\work\3D_NMS\nms_cpp\nms_cpp\nms_3d_cpp.cpp(15,20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\work\3D_NMS\nms_cpp\nms_cpp\nms_3d_cpp.cpp(115,27): warning C4267: “参数”: 从“size_t”转换到“const _Ty”，可能丢失数据
+          with
+          [
+              _Ty=int
+          ]
+    正在创建库 E:\work\3D_NMS\nms_cpp\x64\Debug\nms_cpp.lib 和对象 E:\work\3D_NMS\nms_cpp\x64\Debug\nms_cpp.exp
   nms_cpp.vcxproj -> E:\work\3D_NMS\nms_cpp\x64\Debug\nms_cpp.pyd
