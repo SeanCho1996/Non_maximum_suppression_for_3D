@@ -33,7 +33,7 @@ def nms_3d(boxes, scores, iou_threshold):
     volumes = (back_top_right_x - front_bottom_left_x) * (back_top_right_y - front_bottom_left_y) * (back_top_right_z - front_bottom_left_z)
 
     # sort score in order to extract the most potential bounding box
-    order = np.argsort(confidence_scores[:, 0])
+    order = np.argsort(confidence_scores)
 
     # initialize result bounding box & its score
     res_boxes = []
